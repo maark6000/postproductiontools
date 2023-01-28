@@ -1,0 +1,67 @@
+* { 
+margin: 0; 
+padding: 0; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box; 
+}
+
+body { 
+font-family: Gill Sans, sans-serif; 
+}
+
+h1 {
+    font-size: 80px;
+    color: yellow;
+    text-transform: uppercase
+        
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+masthead {
+    position: relative;
+    
+
+    
+}
+
+/* SEEKCUT IS BACK text */
+
+.back {
+    position: sticky;
+    margin-left: 100px;
+    margin-top: -110px;
+    bottom: 80px;
+    
+    
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.download {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.help {
+    margin-bottom: 15%;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
