@@ -1,0 +1,58 @@
+body {
+    font-family: Helvetica;
+    background-color: lightgray;
+    
+}
+
+h1 { 
+    color: black;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+
+img {
+    
+    width: 40%;
+    border-radius: 70px;
+    overflow: hidden;
+   
+}
+
+.box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+
+    overflow-wrap: break-word;
+}
+
+footer {
+    text-align: center;
+    
+    color: darkgray;
+    font-weight: lighter;
+    
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
