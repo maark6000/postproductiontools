@@ -1,11 +1,11 @@
 body {
     font-family: Helvetica;
-    background-color: lightgray;
+    background-color: #8697ab;
     
 }
 
 h1 { 
-    color: black;
+    color: white;
     font-weight: lighter;
     font-size: 50px;
     text-align: center;
@@ -18,7 +18,7 @@ h1 {
 img {
     
     width: 40%;
-    border-radius: 70px;
+    
     overflow: hidden;
    
 }
@@ -32,17 +32,27 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
     
-    color: black;
+    color: white;
     font-weight: lighter;
     font-size: 30px;
 
     overflow-wrap: break-word;
 }
 
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 footer {
     text-align: center;
     
-    color: darkgray;
+    color: white;
     font-weight: lighter;
     
 }
