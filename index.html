@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>SeekCut 2 — Back in Black</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>SeekCut 2</h1>
+      <h2>Back in Black.</h2>
+      <p class="tagline">No EDL? No problem.</p>
+    </div>
+  </header>
+
+  <section class="screenshot">
+    <img src="images/SC_FrontPanel.png" alt="SeekCut 2 interface">
+  </section>
+
+  <section class="copy">
+    <h3>Introducing SeekCut 2</h3>
+    <p>
+      After years of neglect by its creator, <strong>SeekCut is back</strong> — rebuilt from the ground up with a
+      brand-new edit-detection engine and a streamlined interface. It’s more accurate, smarter, and a whole lot
+      easier on the eyes.
+    </p>
+
+    <p>
+      Designed for <strong>sound editors and re-recording mixers</strong>, SeekCut automatically detects
+      <strong>video edits</strong> and exports precise <strong>MIDI marker files</strong> for import directly into
+      <strong>Pro Tools</strong>. No guesswork, no banging on the <code>+</code> and <code>–</code> keys trying to
+      find every cut. Just load a video, set your <em>session start</em> and <em>video start</em> times, hit
+      <em>Start Scan</em>, and let SeekCut do the rest.
+    </p>
+
+    <p class="donation">
+      <strong>Best part?</strong> It’s free (although please do consider a small donation).
+    </p>
+  </section>
+
+  <section class="tech">
+    <h3>Tech Specs</h3>
+    <ul>
+      <li><strong>macOS 14.6 (Sonoma) or later</strong> (sorry, no Windows)</li>
+      <li>Supports <strong>H.264</strong> and <strong>ProRes</strong> videos</li>
+      <li>Accepted formats: <strong>.mov</strong> or <strong>.mp4</strong></li>
+      <li><strong>Not supported:</strong> Avid DNx (look for “AVdn” in Finder->Get Info under codecs) or <strong>.mxf</strong> files</li>
+    </ul>
+    
+  </section>
+
+  <!-- Explainer video -->
+  <section class="video">
+    <h3>Explainer Video</h3>
+    <div class="video-frame">
+        <iframe width="1261" height="709" src="https://www.youtube.com/embed/VNF4GgKHDUo" title="SeekCut2 Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Issues / Questions / Praise</h3>
+    <p>
+      Email <a href="mailto:mark@postproductiontools.com">mark@postproductiontools.com</a>.
+    </p>
+  </section>
+
+<section class="download" id="download">
+  <h3>Download</h3>
+
+  <a
+    href="downloads/SeekCut_2.0.dmg"
+    class="cta cta-blue"
+    id="downloadBtn"
+    download
+  >
+    Download SeekCut 2 for macOS
+  </a>
+
+  <p class="privacy"><a href="#">Privacy Policy</a></p>
+</section>
+
+  <footer>
+    <p>© 2026 Post Production Tools. All rights reserved.</p>
+  </footer>
+    
+<script>
+  (function () {
+    const DMG_URL = "downloads/SeekCut_2.0.dmg";
+    const STRIPE_URL = "https://buy.stripe.com/eVqbJ14cybOc6Eu2HA7Re00";
+
+    const btn = document.getElementById("downloadBtn");
+    if (!btn) return;
+
+    btn.addEventListener("click", function (e) {
+      // Let the browser handle the download naturally via the href+download attribute,
+      // but also open Stripe immediately (still user-initiated).
+      try {
+        window.open(STRIPE_URL, "_blank", "noopener,noreferrer");
+      } catch (err) {
+        // If a popup blocker stops it, the download still works.
+      }
+
+      // Ensure the button always points to the right file
+      btn.href = DMG_URL;
+    });
+  })();
+</script>
+    
+    
+</body>
+</html>
